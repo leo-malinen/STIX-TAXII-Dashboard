@@ -1,4 +1,4 @@
-# Sentinel (Version 1.0), the threat intelligence dashboard
+# Security Sentinel (Version 1.0), the threat intelligence dashboard
 
 A STIX/TAXII, MISP and OpenCTI overview dashboard built on Next.js + shadcn/ui.
 Every card is currently backed by mock data shaped like the OpenCTI entity model,
