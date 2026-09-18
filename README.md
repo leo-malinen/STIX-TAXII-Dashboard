@@ -84,7 +84,7 @@ Built on `@efferd/dashboard-5` from the `@efferd` registry (configured in
 - `nav-user.tsx` rendered a non-`<button>` through `DropdownMenuTrigger` while leaving `nativeButton` at its default `true`, which Base UI rejects at runtime.
 - Three Natural Earth features with no ISO numeric code collided on a `"undefined"` React key.
 
-## Known issue
+## Known issue (to be built upon)
 
 `npm run lint` does not run. The scaffold pairs `eslint@^10` with
 `eslint-config-next@16.3.4`, whose bundled `eslint-plugin-react` still uses the
