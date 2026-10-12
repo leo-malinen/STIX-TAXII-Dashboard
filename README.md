@@ -73,13 +73,3 @@ The choropleth ramp is monochrome — `color-mix(in oklab, var(--foreground) …
 var(--muted))` — so it inverts correctly between light and dark themes. Colour is
 reserved for the scales that carry meaning: severity, confidence and TLP
 (`components/severity-badge.tsx`).
-
-## Provenance
-
-Built on `@efferd/dashboard-5` from the `@efferd` registry (configured in
-`components.json`). Four defects in the published block were fixed locally:
-
-- `online-now.tsx` imported `StatusIndicator` from `@/components/../../components/indicator`, a path that resolved nowhere, and the `indicator` component was not pulled in as a dependency.
-- `app-sidebar.tsx` passed `collapsible="offExamples"`, which is not a valid value (`offcanvas` was intended).
-- `nav-user.tsx` rendered a non-`<button>` through `DropdownMenuTrigger` while leaving `nativeButton` at its default `true`, which Base UI rejects at runtime.
-- Three Natural Earth features with no ISO numeric code collided on a `"undefined"` React key.
