@@ -66,8 +66,7 @@ npm run generate:map
 ```
 
 Countries join to targeting data by Natural Earth name via `TARGETING_BY_WORLD_NAME`.
-A few micro-states (Singapore among them) have no polygon at 1:110m, so they appear
-in the tables but cannot be shaded.
+A few micro states
 
 The choropleth ramp is monochrome — `color-mix(in oklab, var(--foreground) …,
 var(--muted))` — so it inverts correctly between light and dark themes. Colour is
