@@ -52,13 +52,6 @@ Targeting data shared between the map and the country/region/sector cards lives 
 `lib/threat-intel.ts`. Card-local data (actors, malware, CVEs, reports…) sits at the
 top of each component, matching the upstream block's convention.
 
-## The world map
-
-`components/world-map-geo.ts` is **generated** — do not hand-edit. It holds SVG path
-data for 176 countries, projected from Natural Earth 1:110m with `geoNaturalEarth1`
-into an 800x392 viewBox. This keeps the map dependency-free at runtime (no topojson
-fetch, no mapping library).
-
 Regenerate with:
 
 ```bash
