@@ -24,9 +24,6 @@ Other scripts: `npm run build`, `npm run typecheck`, `npm run format`.
 
 ## Layout
 
-The dashboard is a 4-column grid (`components/dashboard.tsx`) that collapses to 2
-columns on tablet and 1 on mobile.
-
 | Card | File | Span |
 | --- | --- | --- |
 | Knowledge graph (SDO counts) | `knowledge-graph-summary.tsx` | 4 |
