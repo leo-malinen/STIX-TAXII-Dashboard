@@ -43,13 +43,7 @@ Other scripts: `npm run build`, `npm run typecheck`, `npm run format`.
 | Indicator sources | `indicator-sources.tsx` | 4 |
 | Latest reports | `latest-reports.tsx` | 4 |
 
-## Data
-
-Targeting data shared between the map and the country/region/sector cards lives in
-`lib/threat-intel.ts`. Card-local data (actors, malware, CVEs, reports…) sits at the
-top of each component, matching the upstream block's convention.
-
-Regenerate with:
+## Regenerate with:
 
 ```bash
 npm run generate:map
